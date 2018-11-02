@@ -14,7 +14,9 @@ img {
     margin: 0 auto;
     text-align: center;
    }
-
+audio {
+    display: block;
+}
 p {
     font-family: 'Press Start 2P', cursive;
 }

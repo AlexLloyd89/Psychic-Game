@@ -26,8 +26,9 @@ document.onkeyup = function (event) {
 
 var userInput = event.key;
 
-for (var i = 0; i < userGuess.length; i++){ 
-     if (userInput == computerOutput) {
+for (var i = 0; i < userGuess.length; i++){
+
+     if (userInput === userGuess[i]) {
 
     if (userInput === computerOutput) {
         wins++;
@@ -55,4 +56,17 @@ livesText.textContent = "Lives left: " + lives;
 }
 }
 };
+    
+
+    
+
+
+
+
+
+
+
+
+
+
 

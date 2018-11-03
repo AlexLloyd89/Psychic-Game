@@ -17,25 +17,25 @@ img {
 audio {
     display: block;
 }
+
 p {
     font-family: 'Press Start 2P', cursive;
 }
 .oldtext {
+    font-size: xx-large;
     max-width: 960px;
     margin: 0 auto;
     display: block;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
     box-sizing: content-box;
     padding: 10px;
     overflow: hidden;
     border: 6px double;
     -webkit-border-radius: 20px;
     border-radius: 20px;
-    font: normal 70px/1 "VT323", Helvetica, sans-serif;
+    font-family: 'Press Start 2P', cursive;
     color: rgba(0,0,0,1);
     text-align: center;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
-    background: rgb(150,150,150);
+    background: rgb(171, 166, 166);
     text-shadow: 2px 2px 0 rgba(190,214,85,1) ;

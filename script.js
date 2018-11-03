@@ -30,7 +30,7 @@ for (var i = 0; i < userGuess.length; i++){
 
      if (userInput === userGuess[i]) {
 
-    if (userInput === computerOutput) {
+    if (userInput.toLowerCase() === computerOutput) {
         wins++;
         lives = 10;
     }

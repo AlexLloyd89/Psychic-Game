@@ -12,7 +12,7 @@ var losses = 0;
 var lives = 10;
 
 
-var directionsText = document.getElementById("directions-text");
+
 var winsText = document.getElementById("wins-text");
 var lossesText = document.getElementById("losses-text")
 var userInputText = document.getElementById("userInput-text");
@@ -28,22 +28,22 @@ document.onkeyup = function (event) {
 
 var userInput = event.key;
 
+for (var i = 0; i < userGuess.length; i++){ 
 
-
-
-for (var i = 0; i < userGuess.length; i++){
-
-     if (userInput === userGuess[i]) {
-
+    //code will only run if userInput = alaphabetic key
+     if (userInput === userGuess[i]) { 
+    
+    //hides title screen upon userInput
     document.getElementById('mydiv').classList.add("hideme"); 
+    document.getElementById('game').classList.remove("hideme");
 
+    // Begin game logic
     if (userInput.toLowerCase() === computerOutput) {
         wins++;
         lives = 10;
         pastGuess = [];
         computerOutput = computerChoice[Math.floor(Math.random() * computerChoice.length)];
         
-
     }
     else {
         lives--;
@@ -59,11 +59,9 @@ for (var i = 0; i < userGuess.length; i++){
 
   
    
-    
 
 
-//Begin text content
-
+//Display text
 winsText.textContent = "Wins: " + wins;
 lossesText.textContent = "Losses: " + losses;
 userInputText.textContent = "Letters guessed: " + pastGuess;

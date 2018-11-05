@@ -38,4 +38,8 @@ p {
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     background: rgb(171, 166, 166);
-    text-shadow: 2px 2px 0 rgba(190,214,85,1) ;
+    text-shadow: 2px 2px 0 rgba(190,214,85,1) ;}
+
+.hideme {
+    display: none;
+}
